@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Contest</title>
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Random image URL from Unsplash -->
+        <link rel="icon" type="image/png" href="https://source.unsplash.com/random/100x100" sizes="32x32">
+    </head>
+    
+<body>
+    <header>
+        <h1>Private Contest</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Register Contest</a></li>
+                <li><a href="join_contest.html">Join Contest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="center">Register Contest</h2>
+        <form id="contestForm">
+            <label for="prizePool">Prize Pool:</label>
+            <input type="text" id="prizePool" name="prizePool" required>
+
+            <label for="spots">Number of Spots:</label>
+            <input type="number" id="spots" name="spots" required>
+
+            <label for="prize1">First Prize:</label>
+            <input type="number" id="prize1" name="prize1" required>
+
+            <label for="prize2">Second Prize:</label>
+            <input type="number" id="prize2" name="prize2" required>
+
+            <label for="prize3">Third Prize:</label>
+            <input type="number" id="prize3" name="prize3" required>
+
+            <label for="validTill">Valid Till:</label>
+            <input type="datetime-local" id="validTill" name="validTill" required>
+
+            <label for="platform">Platform:</label>
+            <input type="text" id="platform" name="platform" required>
+
+            <label for="contestCode">Contest Code:</label>
+            <input type="text" id="contestCode" name="contestCode" required>
+
+            <input type="submit" value="Create Contest">
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
